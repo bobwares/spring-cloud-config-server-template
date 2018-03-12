@@ -1,0 +1,20 @@
+#security:
+#    user:
+#        name: bobwares
+#        password: 3Monthsold
+server:
+    port: 8888
+spring:
+  application:
+    name: config-server-demo
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/bobwares/config-repo
+logging:
+    level:
+      ROOT: DEBUG
+
+
